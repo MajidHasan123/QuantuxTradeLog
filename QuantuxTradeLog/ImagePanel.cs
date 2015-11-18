@@ -17,24 +17,33 @@ namespace QuantuxTradeLog
             InitializeComponent();
         }
 
+        private string _comments;
         public string Comments
         {
-            get { return richTextBoxComments.Text; }
+            get { return _comments; }
             set { richTextBoxComments.Text = value; }
         }
 
+        private Image _image;
         public Image Image
         {
-            get
-            {
-                return lblImageContainer.Image;
-            }
+            get{ return _image; }
             set
             {
+                _image = value;
                 lblImageContainer.Image = value;
             }
         }
 
+        private void pnlContainer_SizeChanged(object sender, EventArgs e)
+        {
+            
+        }
 
+        private void ImagePanel_SizeChanged(object sender, EventArgs e)
+        {
+            pnlContainer.Width = this.Width;
+            pnlContainer.Height = this.Height;
+        }
     }
 }

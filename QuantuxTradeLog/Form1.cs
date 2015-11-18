@@ -30,16 +30,16 @@ namespace QuantuxTradeLog
             data.Add(new TradelogData() { RMult = "65", Ticks = "30", Points = "d", AveragePrice = "26", Trade = "T" });
             data.Add(new TradelogData() { RMult = "96", Ticks = "78", Points = "r", AveragePrice = "26", Trade = "E" });
             data.Add(new TradelogData() { RMult = "63", Ticks = "96", Points = "r", AveragePrice = "26", Trade = "T" });
-            dataGridView1.DataSource = data;
+            dgvLog.DataSource = data;
 
             // bind to the updated source
-            dataGridView1.DataSource = data;
+            dgvLog.DataSource = data;
             //setting width of cell
-            dataGridView1.Columns[0].Width = 43;
-            dataGridView1.Columns[1].Width = 37;
-            dataGridView1.Columns[2].Width = 32;
-            dataGridView1.Columns[3].Width = 52;
-            dataGridView1.Columns[4].Width = 30;
+            dgvLog.Columns[0].Width = 43;
+            dgvLog.Columns[1].Width = 37;
+            dgvLog.Columns[2].Width = 32;
+            dgvLog.Columns[3].Width = 52;
+            dgvLog.Columns[4].Width = 30;
 
          
         }

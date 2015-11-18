@@ -40,6 +40,14 @@
             this.label101 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
@@ -60,7 +68,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvLog = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutHeader = new System.Windows.Forms.FlowLayoutPanel();
             this.LblRumlt = new System.Windows.Forms.Label();
@@ -88,12 +96,15 @@
             this.label93 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
             this.MessagePage = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.rTxtboxMsg = new System.Windows.Forms.RichTextBox();
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
             this.label97 = new System.Windows.Forms.Label();
             this.lblInsertImage = new System.Windows.Forms.Label();
+            this.lblCameraIcon = new System.Windows.Forms.Label();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblShare = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label40 = new System.Windows.Forms.Label();
@@ -145,26 +156,17 @@
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.ofdImage = new System.Windows.Forms.OpenFileDialog();
-            this.lblCameraIcon = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel19 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label109 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.imagePanel1 = new QuantuxTradeLog.ImagePanel();
             this.tabControl1.SuspendLayout();
             this.TradelogPage.SuspendLayout();
             this.flowLayoutPanel15.SuspendLayout();
             this.flowLayoutPanel16.SuspendLayout();
             this.flowLayoutPanel17.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
+            this.flowLayoutPanel19.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).BeginInit();
             this.flowLayoutPanel4.SuspendLayout();
             this.flowLayoutHeader.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -176,8 +178,6 @@
             this.flowLayoutPanel12.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.flowLayoutPanel19.SuspendLayout();
-            this.flowLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -343,6 +343,115 @@
             this.label103.Text = "Eq";
             this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.BackColor = System.Drawing.Color.Black;
+            this.flowLayoutPanel8.Controls.Add(this.label16);
+            this.flowLayoutPanel8.Controls.Add(this.label33);
+            this.flowLayoutPanel8.Controls.Add(this.label34);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 42);
+            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(129, 15);
+            this.flowLayoutPanel8.TabIndex = 2;
+            // 
+            // label16
+            // 
+            this.label16.AutoEllipsis = true;
+            this.label16.BackColor = System.Drawing.Color.White;
+            this.label16.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(46, 15);
+            this.label16.TabIndex = 51;
+            this.label16.Text = "pnl";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label33
+            // 
+            this.label33.AutoEllipsis = true;
+            this.label33.BackColor = System.Drawing.Color.White;
+            this.label33.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label33.Location = new System.Drawing.Point(47, 0);
+            this.label33.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(37, 15);
+            this.label33.TabIndex = 54;
+            this.label33.Text = "unit";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.AutoEllipsis = true;
+            this.label34.BackColor = System.Drawing.Color.White;
+            this.label34.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label34.Location = new System.Drawing.Point(85, 0);
+            this.label34.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(43, 15);
+            this.label34.TabIndex = 55;
+            this.label34.Text = "Eq";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel19
+            // 
+            this.flowLayoutPanel19.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel19.Controls.Add(this.label109);
+            this.flowLayoutPanel19.Controls.Add(this.label110);
+            this.flowLayoutPanel19.Controls.Add(this.label111);
+            this.flowLayoutPanel19.Location = new System.Drawing.Point(0, 57);
+            this.flowLayoutPanel19.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel19.Name = "flowLayoutPanel19";
+            this.flowLayoutPanel19.Size = new System.Drawing.Size(129, 20);
+            this.flowLayoutPanel19.TabIndex = 7;
+            // 
+            // label109
+            // 
+            this.label109.AutoEllipsis = true;
+            this.label109.BackColor = System.Drawing.Color.Black;
+            this.label109.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label109.Location = new System.Drawing.Point(0, 0);
+            this.label109.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.label109.Name = "label109";
+            this.label109.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.label109.Size = new System.Drawing.Size(46, 20);
+            this.label109.TabIndex = 51;
+            this.label109.Text = "pnl";
+            this.label109.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label110
+            // 
+            this.label110.AutoEllipsis = true;
+            this.label110.BackColor = System.Drawing.Color.Black;
+            this.label110.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label110.Location = new System.Drawing.Point(47, 0);
+            this.label110.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(37, 20);
+            this.label110.TabIndex = 54;
+            this.label110.Text = "unit";
+            this.label110.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label111
+            // 
+            this.label111.AutoEllipsis = true;
+            this.label111.BackColor = System.Drawing.Color.Black;
+            this.label111.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label111.Location = new System.Drawing.Point(85, 0);
+            this.label111.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(43, 20);
+            this.label111.TabIndex = 55;
+            this.label111.Text = "Eq";
+            this.label111.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // label96
             // 
             this.label96.AutoEllipsis = true;
@@ -500,7 +609,7 @@
             // 
             this.flowLayoutPanel5.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel5.Controls.Add(this.flowLayoutPanel6);
-            this.flowLayoutPanel5.Controls.Add(this.dataGridView1);
+            this.flowLayoutPanel5.Controls.Add(this.dgvLog);
             this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel5.Location = new System.Drawing.Point(6, 157);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
@@ -591,17 +700,17 @@
             this.label90.TabIndex = 57;
             this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // dgvLog
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 35;
-            this.dataGridView1.Size = new System.Drawing.Size(215, 153);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvLog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLog.ColumnHeadersVisible = false;
+            this.dgvLog.Location = new System.Drawing.Point(0, 27);
+            this.dgvLog.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
+            this.dgvLog.Name = "dgvLog";
+            this.dgvLog.RowHeadersVisible = false;
+            this.dgvLog.RowHeadersWidth = 35;
+            this.dgvLog.Size = new System.Drawing.Size(215, 153);
+            this.dgvLog.TabIndex = 1;
             // 
             // flowLayoutPanel4
             // 
@@ -983,6 +1092,16 @@
             this.MessagePage.TabIndex = 1;
             this.MessagePage.Text = "Message Board";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(40, 341);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // rTxtboxMsg
             // 
             this.rTxtboxMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1031,6 +1150,21 @@
             this.lblInsertImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblInsertImage.Click += new System.EventHandler(this.lblCamera_Click);
             // 
+            // lblCameraIcon
+            // 
+            this.lblCameraIcon.AutoEllipsis = true;
+            this.lblCameraIcon.BackColor = System.Drawing.Color.Transparent;
+            this.lblCameraIcon.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCameraIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.lblCameraIcon.Image = ((System.Drawing.Image)(resources.GetObject("lblCameraIcon.Image")));
+            this.lblCameraIcon.Location = new System.Drawing.Point(173, 0);
+            this.lblCameraIcon.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCameraIcon.Name = "lblCameraIcon";
+            this.lblCameraIcon.Size = new System.Drawing.Size(36, 24);
+            this.lblCameraIcon.TabIndex = 28;
+            this.lblCameraIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCameraIcon.Click += new System.EventHandler(this.lblCameraIcon_Click);
+            // 
             // flowLayoutPanel12
             // 
             this.flowLayoutPanel12.Controls.Add(this.lblShare);
@@ -1053,6 +1187,20 @@
             this.lblShare.TabIndex = 18;
             this.lblShare.Text = "Share To:";
             this.lblShare.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label38
+            // 
+            this.label38.AutoEllipsis = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.label38.Image = ((System.Drawing.Image)(resources.GetObject("label38.Image")));
+            this.label38.Location = new System.Drawing.Point(66, 0);
+            this.label38.Margin = new System.Windows.Forms.Padding(0);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(27, 25);
+            this.label38.TabIndex = 27;
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label39
             // 
@@ -1752,168 +1900,20 @@
             // 
             this.ofdImage.FileName = "openFileDialog1";
             // 
-            // lblCameraIcon
-            // 
-            this.lblCameraIcon.AutoEllipsis = true;
-            this.lblCameraIcon.BackColor = System.Drawing.Color.Transparent;
-            this.lblCameraIcon.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCameraIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.lblCameraIcon.Image = ((System.Drawing.Image)(resources.GetObject("lblCameraIcon.Image")));
-            this.lblCameraIcon.Location = new System.Drawing.Point(173, 0);
-            this.lblCameraIcon.Margin = new System.Windows.Forms.Padding(0);
-            this.lblCameraIcon.Name = "lblCameraIcon";
-            this.lblCameraIcon.Size = new System.Drawing.Size(36, 24);
-            this.lblCameraIcon.TabIndex = 28;
-            this.lblCameraIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCameraIcon.Click += new System.EventHandler(this.lblCameraIcon_Click);
-            // 
-            // label38
-            // 
-            this.label38.AutoEllipsis = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.label38.Image = ((System.Drawing.Image)(resources.GetObject("label38.Image")));
-            this.label38.Location = new System.Drawing.Point(66, 0);
-            this.label38.Margin = new System.Windows.Forms.Padding(0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(27, 25);
-            this.label38.TabIndex = 27;
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(40, 341);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // flowLayoutPanel19
-            // 
-            this.flowLayoutPanel19.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel19.Controls.Add(this.label109);
-            this.flowLayoutPanel19.Controls.Add(this.label110);
-            this.flowLayoutPanel19.Controls.Add(this.label111);
-            this.flowLayoutPanel19.Location = new System.Drawing.Point(0, 57);
-            this.flowLayoutPanel19.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel19.Name = "flowLayoutPanel19";
-            this.flowLayoutPanel19.Size = new System.Drawing.Size(129, 20);
-            this.flowLayoutPanel19.TabIndex = 7;
-            // 
-            // label109
-            // 
-            this.label109.AutoEllipsis = true;
-            this.label109.BackColor = System.Drawing.Color.Black;
-            this.label109.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label109.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label109.Location = new System.Drawing.Point(0, 0);
-            this.label109.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.label109.Name = "label109";
-            this.label109.Padding = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.label109.Size = new System.Drawing.Size(46, 20);
-            this.label109.TabIndex = 51;
-            this.label109.Text = "pnl";
-            this.label109.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label110
-            // 
-            this.label110.AutoEllipsis = true;
-            this.label110.BackColor = System.Drawing.Color.Black;
-            this.label110.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label110.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label110.Location = new System.Drawing.Point(47, 0);
-            this.label110.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(37, 20);
-            this.label110.TabIndex = 54;
-            this.label110.Text = "unit";
-            this.label110.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label111
-            // 
-            this.label111.AutoEllipsis = true;
-            this.label111.BackColor = System.Drawing.Color.Black;
-            this.label111.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label111.Location = new System.Drawing.Point(85, 0);
-            this.label111.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(43, 20);
-            this.label111.TabIndex = 55;
-            this.label111.Text = "Eq";
-            this.label111.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // flowLayoutPanel8
-            // 
-            this.flowLayoutPanel8.BackColor = System.Drawing.Color.Black;
-            this.flowLayoutPanel8.Controls.Add(this.label16);
-            this.flowLayoutPanel8.Controls.Add(this.label33);
-            this.flowLayoutPanel8.Controls.Add(this.label34);
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 42);
-            this.flowLayoutPanel8.Margin = new System.Windows.Forms.Padding(0, 1, 0, 0);
-            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(129, 15);
-            this.flowLayoutPanel8.TabIndex = 2;
-            // 
-            // label16
-            // 
-            this.label16.AutoEllipsis = true;
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(46, 15);
-            this.label16.TabIndex = 51;
-            this.label16.Text = "pnl";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label33
-            // 
-            this.label33.AutoEllipsis = true;
-            this.label33.BackColor = System.Drawing.Color.White;
-            this.label33.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label33.Location = new System.Drawing.Point(47, 0);
-            this.label33.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(37, 15);
-            this.label33.TabIndex = 54;
-            this.label33.Text = "unit";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.AutoEllipsis = true;
-            this.label34.BackColor = System.Drawing.Color.White;
-            this.label34.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label34.Location = new System.Drawing.Point(85, 0);
-            this.label34.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(43, 15);
-            this.label34.TabIndex = 55;
-            this.label34.Text = "Eq";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // imagePanel1
             // 
-            this.imagePanel1.Comments = "Enter comments here";
-            this.imagePanel1.Image = ((System.Drawing.Image)(resources.GetObject("imagePanel1.Image")));
-            this.imagePanel1.Location = new System.Drawing.Point(308, 240);
+            this.imagePanel1.Comments = null;
+            this.imagePanel1.Image = null;
+            this.imagePanel1.Location = new System.Drawing.Point(241, 31);
             this.imagePanel1.Name = "imagePanel1";
-            this.imagePanel1.Size = new System.Drawing.Size(200, 232);
-            this.imagePanel1.TabIndex = 1;
+            this.imagePanel1.Size = new System.Drawing.Size(181, 215);
+            this.imagePanel1.TabIndex = 96;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 867);
+            this.ClientSize = new System.Drawing.Size(827, 867);
             this.Controls.Add(this.imagePanel1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
@@ -1923,9 +1923,11 @@
             this.flowLayoutPanel15.ResumeLayout(false);
             this.flowLayoutPanel16.ResumeLayout(false);
             this.flowLayoutPanel17.ResumeLayout(false);
+            this.flowLayoutPanel8.ResumeLayout(false);
+            this.flowLayoutPanel19.ResumeLayout(false);
             this.flowLayoutPanel5.ResumeLayout(false);
             this.flowLayoutPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLog)).EndInit();
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutHeader.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -1937,8 +1939,6 @@
             this.flowLayoutPanel12.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.flowLayoutPanel19.ResumeLayout(false);
-            this.flowLayoutPanel8.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1954,7 +1954,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvLog;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutHeader;
         private System.Windows.Forms.Label LblRumlt;
@@ -2063,7 +2063,6 @@
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label98;
-        private ImagePanel imagePanel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.Label label16;
@@ -2073,6 +2072,7 @@
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label111;
+        private ImagePanel imagePanel1;
     }
 }
 
