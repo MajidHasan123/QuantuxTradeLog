@@ -15,6 +15,7 @@ namespace QuantuxTradeLog
 {
     public partial class Form1 : Form
     {
+        string filePath = "";
         public Form1()
         {
             InitializeComponent();
@@ -45,37 +46,7 @@ namespace QuantuxTradeLog
         }
 
 
-        private void lblCamera_Click(object sender, EventArgs e)
-        {
-            // Getting file
-            string filePath = "";
-            ofdImage.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
-
-            DialogResult dResult = ofdImage.ShowDialog();
-
-            // Get path for selected file
-            if (dResult == System.Windows.Forms.DialogResult.OK)
-                filePath = ofdImage.FileName;
-
-            // Converting file to bitmap format
-            Bitmap btmp = new Bitmap(filePath);
-
-            btmp = ResizeImage(btmp, 200, 100);
-
-            Clipboard.SetDataObject(btmp);
-            DataFormats.Format selectedFormat = DataFormats.GetFormat(DataFormats.Bitmap);
-
-            // Validate format before pasting 
-
-            if (rTxtboxMsg.CanPaste(selectedFormat))
-            {
-                rTxtboxMsg.Paste(selectedFormat);
-                rTxtboxMsg.AppendText(Environment.NewLine);
-                rTxtboxMsg.Focus();
-            }
-            else
-                MessageBox.Show("Data format is not supported! ");
-        }
+        
 
         private Bitmap ResizeImage(Bitmap image, int width, int height)
         {
@@ -104,11 +75,35 @@ namespace QuantuxTradeLog
 
         private void lblCameraIcon_Click(object sender, EventArgs e)
         {
+            
 
             System.Drawing.Image currentImage = CaptureScreen();
-            currentImage.Save(@"D:\ScreenShot1.png", System.Drawing.Imaging.ImageFormat.Png);
+            currentImage.Save(@"D:\ScreenShot1.png", System.Drawing.Imaging.ImageFormat.Bmp);
             currentImage.Dispose();
             currentImage = null;
+
+            filePath = "D:\\ScreenShot1.png";
+
+            ofdImage.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+            Bitmap btmp = new Bitmap(filePath);
+
+            btmp = ResizeImage(btmp, 200, 100);
+
+            Clipboard.SetDataObject(btmp);
+            DataFormats.Format selectedFormat = DataFormats.GetFormat(DataFormats.Bitmap);
+
+            // Validate format before pasting 
+
+            if (rTxtboxMsg.CanPaste(selectedFormat))
+            {
+                rTxtboxMsg.Paste(selectedFormat);
+                rTxtboxMsg.AppendText(Environment.NewLine);
+                rTxtboxMsg.Focus();
+            }
+            else
+                MessageBox.Show("Data format is not supported! ");
+
+            
  
         }
 
@@ -123,10 +118,17 @@ namespace QuantuxTradeLog
             return target;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            Image i = Image.FromFile(@"D:\ScreenShot1.png");
-            imagePanel1.Image = i;
+           ImagePanel imgPanel = new ImagePanel();
+            Bitmap btmp = new Bitmap(filePath);
+            btmp = ResizeImage(btmp, 200, 100);
+
+           imgPanel.Comments = rTxtboxMsg.Text;
+           imgPanel.Image = btmp;
+           ControlPanel.Controls.Add(imgPanel);
+
         }
 
        

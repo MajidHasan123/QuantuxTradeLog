@@ -17,11 +17,46 @@ namespace QuantuxTradeLog
             InitializeComponent();
         }
 
+        //rich box comments
         private string _comments;
         public string Comments
         {
             get { return _comments; }
             set { richTextBoxComments.Text = value; }
+        }
+
+        //rick text foreground
+        private Color _commentsForeground = Color.Black;
+        public Color CommentsForeground
+        {
+            get { return _commentsForeground; }
+            set
+            {
+                _commentsForeground = value; 
+                richTextBoxComments.ForeColor = value; 
+            }
+        }
+
+        private Color _labelBackColor=Color.Gray;
+        public Color LabelBackColor
+        {
+            get { return _labelBackColor; }
+            set
+            { 
+                _labelBackColor = value; 
+                lblImageContainer.BackColor = value; 
+            }
+        }
+
+        private bool _labelVisibility;
+        public bool LabelVisibility
+        {
+            get { return _labelVisibility; }
+            set 
+            { 
+                _labelVisibility = value;
+                lblImageContainer.Visible = value; 
+            }
         }
 
         private Image _image;
@@ -35,6 +70,8 @@ namespace QuantuxTradeLog
             }
         }
 
+
+
         private void pnlContainer_SizeChanged(object sender, EventArgs e)
         {
             
@@ -45,5 +82,7 @@ namespace QuantuxTradeLog
             pnlContainer.Width = this.Width;
             pnlContainer.Height = this.Height;
         }
+
+       
     }
 }
