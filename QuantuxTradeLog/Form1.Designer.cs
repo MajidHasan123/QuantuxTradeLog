@@ -96,68 +96,29 @@
             this.label93 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
             this.MessagePage = new System.Windows.Forms.TabPage();
+            this.lblSeparater = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.ControlPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.rTxtboxMsg = new System.Windows.Forms.RichTextBox();
             this.flowLayoutPanel13 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label97 = new System.Windows.Forms.Label();
-            this.lblInsertImage = new System.Windows.Forms.Label();
+            this.lblCommentsHeader = new System.Windows.Forms.Label();
+            this.pnlCamera = new System.Windows.Forms.FlowLayoutPanel();
             this.lblCameraIcon = new System.Windows.Forms.Label();
+            this.lblScreenShot = new System.Windows.Forms.Label();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblShare = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
+            this.lblFaceBook = new System.Windows.Forms.Label();
+            this.lblTwitter = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
             this.ofdImage = new System.Windows.Forms.OpenFileDialog();
-            this.imagePanel1 = new QuantuxTradeLog.ImagePanel();
             this.tabControl1.SuspendLayout();
             this.TradelogPage.SuspendLayout();
             this.flowLayoutPanel15.SuspendLayout();
@@ -176,9 +137,10 @@
             this.flowLayoutPanel14.SuspendLayout();
             this.MessagePage.SuspendLayout();
             this.flowLayoutPanel13.SuspendLayout();
+            this.pnlCamera.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel12.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1135,12 +1097,12 @@
             // MessagePage
             // 
             this.MessagePage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(69)))), ((int)(((byte)(81)))));
+            this.MessagePage.Controls.Add(this.lblSeparater);
             this.MessagePage.Controls.Add(this.button2);
             this.MessagePage.Controls.Add(this.ControlPanel);
             this.MessagePage.Controls.Add(this.rTxtboxMsg);
             this.MessagePage.Controls.Add(this.flowLayoutPanel13);
             this.MessagePage.Controls.Add(this.flowLayoutPanel12);
-            this.MessagePage.Controls.Add(this.label39);
             this.MessagePage.Location = new System.Drawing.Point(4, 22);
             this.MessagePage.Margin = new System.Windows.Forms.Padding(0);
             this.MessagePage.Name = "MessagePage";
@@ -1149,14 +1111,23 @@
             this.MessagePage.TabIndex = 1;
             this.MessagePage.Text = "Message Board";
             // 
+            // lblSeparater
+            // 
+            this.lblSeparater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(119)))), ((int)(((byte)(141)))));
+            this.lblSeparater.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSeparater.Location = new System.Drawing.Point(8, 41);
+            this.lblSeparater.Name = "lblSeparater";
+            this.lblSeparater.Size = new System.Drawing.Size(210, 1);
+            this.lblSeparater.TabIndex = 98;
+            // 
             // button2
             // 
             this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(63, 328);
+            this.button2.Location = new System.Drawing.Point(69, 274);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 97;
-            this.button2.Text = "button2";
+            this.button2.Text = "Submit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -1165,7 +1136,7 @@
             this.ControlPanel.AutoScroll = true;
             this.ControlPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ControlPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.ControlPanel.Location = new System.Drawing.Point(13, 357);
+            this.ControlPanel.Location = new System.Drawing.Point(13, 303);
             this.ControlPanel.Name = "ControlPanel";
             this.ControlPanel.Size = new System.Drawing.Size(200, 243);
             this.ControlPanel.TabIndex = 97;
@@ -1174,7 +1145,7 @@
             // rTxtboxMsg
             // 
             this.rTxtboxMsg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.rTxtboxMsg.Location = new System.Drawing.Point(8, 130);
+            this.rTxtboxMsg.Location = new System.Drawing.Point(8, 76);
             this.rTxtboxMsg.Name = "rTxtboxMsg";
             this.rTxtboxMsg.Size = new System.Drawing.Size(206, 192);
             this.rTxtboxMsg.TabIndex = 26;
@@ -1182,43 +1153,39 @@
             // 
             // flowLayoutPanel13
             // 
-            this.flowLayoutPanel13.Controls.Add(this.label97);
-            this.flowLayoutPanel13.Controls.Add(this.lblInsertImage);
-            this.flowLayoutPanel13.Controls.Add(this.lblCameraIcon);
-            this.flowLayoutPanel13.Location = new System.Drawing.Point(13, 73);
+            this.flowLayoutPanel13.Controls.Add(this.lblCommentsHeader);
+            this.flowLayoutPanel13.Controls.Add(this.pnlCamera);
+            this.flowLayoutPanel13.Controls.Add(this.flowLayoutPanel7);
+            this.flowLayoutPanel13.Location = new System.Drawing.Point(13, 39);
             this.flowLayoutPanel13.Name = "flowLayoutPanel13";
-            this.flowLayoutPanel13.Size = new System.Drawing.Size(308, 35);
+            this.flowLayoutPanel13.Size = new System.Drawing.Size(200, 33);
             this.flowLayoutPanel13.TabIndex = 25;
             // 
-            // label97
+            // lblCommentsHeader
             // 
-            this.label97.AutoEllipsis = true;
-            this.label97.BackColor = System.Drawing.Color.Transparent;
-            this.label97.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.label97.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.label97.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label97.Location = new System.Drawing.Point(0, 0);
-            this.label97.Margin = new System.Windows.Forms.Padding(0);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(79, 24);
-            this.label97.TabIndex = 18;
-            this.label97.Text = "Comments";
-            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCommentsHeader.AutoEllipsis = true;
+            this.lblCommentsHeader.BackColor = System.Drawing.Color.Transparent;
+            this.lblCommentsHeader.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCommentsHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.lblCommentsHeader.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblCommentsHeader.Location = new System.Drawing.Point(0, 0);
+            this.lblCommentsHeader.Margin = new System.Windows.Forms.Padding(0);
+            this.lblCommentsHeader.Name = "lblCommentsHeader";
+            this.lblCommentsHeader.Size = new System.Drawing.Size(64, 33);
+            this.lblCommentsHeader.TabIndex = 18;
+            this.lblCommentsHeader.Text = "Comments";
+            this.lblCommentsHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblInsertImage
+            // pnlCamera
             // 
-            this.lblInsertImage.AutoEllipsis = true;
-            this.lblInsertImage.BackColor = System.Drawing.Color.Transparent;
-            this.lblInsertImage.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.lblInsertImage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.lblInsertImage.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblInsertImage.Location = new System.Drawing.Point(79, 0);
-            this.lblInsertImage.Margin = new System.Windows.Forms.Padding(0);
-            this.lblInsertImage.Name = "lblInsertImage";
-            this.lblInsertImage.Size = new System.Drawing.Size(94, 24);
-            this.lblInsertImage.TabIndex = 27;
-            this.lblInsertImage.Text = "InsertImage";
-            this.lblInsertImage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pnlCamera.Controls.Add(this.lblCameraIcon);
+            this.pnlCamera.Controls.Add(this.lblScreenShot);
+            this.pnlCamera.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.pnlCamera.Location = new System.Drawing.Point(64, 3);
+            this.pnlCamera.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.pnlCamera.Name = "pnlCamera";
+            this.pnlCamera.Size = new System.Drawing.Size(75, 35);
+            this.pnlCamera.TabIndex = 1;
             // 
             // lblCameraIcon
             // 
@@ -1228,345 +1195,167 @@
             this.lblCameraIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.lblCameraIcon.Image = ((System.Drawing.Image)(resources.GetObject("lblCameraIcon.Image")));
             this.lblCameraIcon.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblCameraIcon.Location = new System.Drawing.Point(173, 0);
+            this.lblCameraIcon.Location = new System.Drawing.Point(0, 0);
             this.lblCameraIcon.Margin = new System.Windows.Forms.Padding(0);
             this.lblCameraIcon.Name = "lblCameraIcon";
-            this.lblCameraIcon.Size = new System.Drawing.Size(36, 24);
+            this.lblCameraIcon.Size = new System.Drawing.Size(75, 19);
             this.lblCameraIcon.TabIndex = 28;
-            this.lblCameraIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCameraIcon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lblCameraIcon.Click += new System.EventHandler(this.lblCameraIcon_Click);
+            // 
+            // lblScreenShot
+            // 
+            this.lblScreenShot.AutoEllipsis = true;
+            this.lblScreenShot.BackColor = System.Drawing.Color.Transparent;
+            this.lblScreenShot.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScreenShot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.lblScreenShot.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblScreenShot.Location = new System.Drawing.Point(0, 19);
+            this.lblScreenShot.Margin = new System.Windows.Forms.Padding(0);
+            this.lblScreenShot.Name = "lblScreenShot";
+            this.lblScreenShot.Size = new System.Drawing.Size(75, 14);
+            this.lblScreenShot.TabIndex = 19;
+            this.lblScreenShot.Text = "Screen Shot";
+            this.lblScreenShot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel7
+            // 
+            this.flowLayoutPanel7.Controls.Add(this.label15);
+            this.flowLayoutPanel7.Controls.Add(this.label35);
+            this.flowLayoutPanel7.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(145, 3);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(48, 35);
+            this.flowLayoutPanel7.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoEllipsis = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.label15.Image = ((System.Drawing.Image)(resources.GetObject("label15.Image")));
+            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label15.Location = new System.Drawing.Point(0, 0);
+            this.label15.Margin = new System.Windows.Forms.Padding(0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 19);
+            this.label15.TabIndex = 28;
+            this.label15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label35
+            // 
+            this.label35.AutoEllipsis = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.label35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label35.Location = new System.Drawing.Point(0, 19);
+            this.label35.Margin = new System.Windows.Forms.Padding(0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(48, 12);
+            this.label35.TabIndex = 19;
+            this.label35.Text = "Video";
+            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel12
             // 
             this.flowLayoutPanel12.Controls.Add(this.lblShare);
-            this.flowLayoutPanel12.Controls.Add(this.label38);
+            this.flowLayoutPanel12.Controls.Add(this.lblFaceBook);
+            this.flowLayoutPanel12.Controls.Add(this.lblTwitter);
+            this.flowLayoutPanel12.Controls.Add(this.label13);
+            this.flowLayoutPanel12.Controls.Add(this.label14);
             this.flowLayoutPanel12.Location = new System.Drawing.Point(13, 14);
             this.flowLayoutPanel12.Name = "flowLayoutPanel12";
-            this.flowLayoutPanel12.Size = new System.Drawing.Size(200, 25);
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(200, 26);
             this.flowLayoutPanel12.TabIndex = 24;
             // 
             // lblShare
             // 
             this.lblShare.AutoEllipsis = true;
             this.lblShare.BackColor = System.Drawing.Color.Transparent;
-            this.lblShare.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.lblShare.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.lblShare.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lblShare.Location = new System.Drawing.Point(0, 0);
             this.lblShare.Margin = new System.Windows.Forms.Padding(0);
             this.lblShare.Name = "lblShare";
-            this.lblShare.Size = new System.Drawing.Size(66, 18);
+            this.lblShare.Size = new System.Drawing.Size(64, 18);
             this.lblShare.TabIndex = 18;
             this.lblShare.Text = "Share To:";
             this.lblShare.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label38
+            // lblFaceBook
             // 
-            this.label38.AutoEllipsis = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Calibri", 11.25F);
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
-            this.label38.Image = ((System.Drawing.Image)(resources.GetObject("label38.Image")));
-            this.label38.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label38.Location = new System.Drawing.Point(66, 0);
-            this.label38.Margin = new System.Windows.Forms.Padding(0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(27, 25);
-            this.label38.TabIndex = 27;
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFaceBook.AutoEllipsis = true;
+            this.lblFaceBook.BackColor = System.Drawing.Color.Transparent;
+            this.lblFaceBook.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.lblFaceBook.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.lblFaceBook.Image = global::QuantuxTradeLog.Properties.Resources.FBIco;
+            this.lblFaceBook.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblFaceBook.Location = new System.Drawing.Point(64, 0);
+            this.lblFaceBook.Margin = new System.Windows.Forms.Padding(0);
+            this.lblFaceBook.Name = "lblFaceBook";
+            this.lblFaceBook.Size = new System.Drawing.Size(22, 18);
+            this.lblFaceBook.TabIndex = 27;
+            this.lblFaceBook.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label39
+            // lblTwitter
             // 
-            this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(119)))), ((int)(((byte)(141)))));
-            this.label39.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label39.Location = new System.Drawing.Point(10, 61);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(204, 1);
-            this.label39.TabIndex = 23;
+            this.lblTwitter.AutoEllipsis = true;
+            this.lblTwitter.BackColor = System.Drawing.Color.Transparent;
+            this.lblTwitter.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.lblTwitter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.lblTwitter.Image = ((System.Drawing.Image)(resources.GetObject("lblTwitter.Image")));
+            this.lblTwitter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblTwitter.Location = new System.Drawing.Point(91, 0);
+            this.lblTwitter.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.lblTwitter.Name = "lblTwitter";
+            this.lblTwitter.Size = new System.Drawing.Size(22, 18);
+            this.lblTwitter.TabIndex = 28;
+            this.lblTwitter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.AutoEllipsis = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.label13.Image = global::QuantuxTradeLog.Properties.Resources.STC1;
+            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label13.Location = new System.Drawing.Point(118, 0);
+            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(21, 26);
+            this.label13.TabIndex = 29;
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.AutoEllipsis = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Calibri", 11.25F);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.label14.Image = ((System.Drawing.Image)(resources.GetObject("label14.Image")));
+            this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label14.Location = new System.Drawing.Point(139, 0);
+            this.label14.Margin = new System.Windows.Forms.Padding(0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(32, 26);
+            this.label14.TabIndex = 30;
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label40);
-            this.tabPage1.Controls.Add(this.label41);
-            this.tabPage1.Controls.Add(this.label42);
-            this.tabPage1.Controls.Add(this.label43);
-            this.tabPage1.Controls.Add(this.label44);
-            this.tabPage1.Controls.Add(this.label45);
-            this.tabPage1.Controls.Add(this.label46);
-            this.tabPage1.Controls.Add(this.label47);
-            this.tabPage1.Controls.Add(this.label48);
-            this.tabPage1.Controls.Add(this.label49);
-            this.tabPage1.Controls.Add(this.label50);
-            this.tabPage1.Controls.Add(this.label51);
-            this.tabPage1.Controls.Add(this.label52);
-            this.tabPage1.Controls.Add(this.label53);
-            this.tabPage1.Controls.Add(this.label54);
-            this.tabPage1.Controls.Add(this.label55);
             this.tabPage1.Controls.Add(this.label56);
             this.tabPage1.Controls.Add(this.label57);
             this.tabPage1.Controls.Add(this.label58);
-            this.tabPage1.Controls.Add(this.label59);
-            this.tabPage1.Controls.Add(this.label60);
-            this.tabPage1.Controls.Add(this.label61);
-            this.tabPage1.Controls.Add(this.label62);
-            this.tabPage1.Controls.Add(this.label63);
-            this.tabPage1.Controls.Add(this.label64);
-            this.tabPage1.Controls.Add(this.label65);
-            this.tabPage1.Controls.Add(this.label66);
-            this.tabPage1.Controls.Add(this.dataGridView2);
-            this.tabPage1.Controls.Add(this.label67);
-            this.tabPage1.Controls.Add(this.label68);
-            this.tabPage1.Controls.Add(this.label69);
-            this.tabPage1.Controls.Add(this.label70);
-            this.tabPage1.Controls.Add(this.label71);
-            this.tabPage1.Controls.Add(this.label72);
-            this.tabPage1.Controls.Add(this.label73);
-            this.tabPage1.Controls.Add(this.label74);
-            this.tabPage1.Controls.Add(this.label75);
-            this.tabPage1.Controls.Add(this.label76);
-            this.tabPage1.Controls.Add(this.label77);
-            this.tabPage1.Controls.Add(this.label78);
-            this.tabPage1.Controls.Add(this.label79);
-            this.tabPage1.Controls.Add(this.label80);
-            this.tabPage1.Controls.Add(this.label81);
-            this.tabPage1.Controls.Add(this.label82);
-            this.tabPage1.Controls.Add(this.label83);
-            this.tabPage1.Controls.Add(this.label84);
-            this.tabPage1.Controls.Add(this.label85);
-            this.tabPage1.Controls.Add(this.label86);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(230, 622);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Test";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // label40
-            // 
-            this.label40.AutoEllipsis = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label40.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label40.Location = new System.Drawing.Point(80, 574);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(91, 18);
-            this.label40.TabIndex = 97;
-            this.label40.Text = "UnRealized PnL";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label41
-            // 
-            this.label41.AutoEllipsis = true;
-            this.label41.BackColor = System.Drawing.Color.Transparent;
-            this.label41.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label41.Location = new System.Drawing.Point(83, 555);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(86, 18);
-            this.label41.TabIndex = 96;
-            this.label41.Text = "Realized PnL";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label42
-            // 
-            this.label42.AutoEllipsis = true;
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label42.Location = new System.Drawing.Point(195, 503);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(103, 18);
-            this.label42.TabIndex = 95;
-            this.label42.Text = "PnL Summary";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label43
-            // 
-            this.label43.AutoEllipsis = true;
-            this.label43.BackColor = System.Drawing.Color.Black;
-            this.label43.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label43.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label43.Location = new System.Drawing.Point(277, 599);
-            this.label43.Margin = new System.Windows.Forms.Padding(0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(50, 24);
-            this.label43.TabIndex = 94;
-            this.label43.Text = "Points";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label44
-            // 
-            this.label44.AutoEllipsis = true;
-            this.label44.BackColor = System.Drawing.Color.Black;
-            this.label44.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label44.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label44.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label44.Location = new System.Drawing.Point(226, 599);
-            this.label44.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(50, 24);
-            this.label44.TabIndex = 93;
-            this.label44.Text = "Ticks";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label45
-            // 
-            this.label45.AutoEllipsis = true;
-            this.label45.BackColor = System.Drawing.Color.Black;
-            this.label45.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label45.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label45.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label45.Location = new System.Drawing.Point(175, 599);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(50, 24);
-            this.label45.TabIndex = 92;
-            this.label45.Text = "R-Mult";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label46
-            // 
-            this.label46.AutoEllipsis = true;
-            this.label46.BackColor = System.Drawing.Color.White;
-            this.label46.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label46.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label46.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label46.Location = new System.Drawing.Point(277, 574);
-            this.label46.Margin = new System.Windows.Forms.Padding(0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(50, 24);
-            this.label46.TabIndex = 91;
-            this.label46.Text = "Points";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label47
-            // 
-            this.label47.AutoEllipsis = true;
-            this.label47.BackColor = System.Drawing.Color.White;
-            this.label47.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label47.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label47.Location = new System.Drawing.Point(226, 574);
-            this.label47.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(50, 24);
-            this.label47.TabIndex = 90;
-            this.label47.Text = "Ticks";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label48
-            // 
-            this.label48.AutoEllipsis = true;
-            this.label48.BackColor = System.Drawing.Color.White;
-            this.label48.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label48.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label48.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label48.Location = new System.Drawing.Point(175, 574);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(50, 24);
-            this.label48.TabIndex = 89;
-            this.label48.Text = "R-Mult";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label49
-            // 
-            this.label49.AutoEllipsis = true;
-            this.label49.BackColor = System.Drawing.Color.White;
-            this.label49.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label49.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label49.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label49.Location = new System.Drawing.Point(277, 549);
-            this.label49.Margin = new System.Windows.Forms.Padding(0);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(50, 24);
-            this.label49.TabIndex = 88;
-            this.label49.Text = "Points";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label50
-            // 
-            this.label50.AutoEllipsis = true;
-            this.label50.BackColor = System.Drawing.Color.White;
-            this.label50.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label50.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label50.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label50.Location = new System.Drawing.Point(226, 549);
-            this.label50.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(50, 24);
-            this.label50.TabIndex = 87;
-            this.label50.Text = "Ticks";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label51
-            // 
-            this.label51.AutoEllipsis = true;
-            this.label51.BackColor = System.Drawing.Color.White;
-            this.label51.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label51.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label51.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label51.Location = new System.Drawing.Point(175, 549);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(50, 24);
-            this.label51.TabIndex = 86;
-            this.label51.Text = "R-Mult";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label52
-            // 
-            this.label52.AutoEllipsis = true;
-            this.label52.BackColor = System.Drawing.Color.Black;
-            this.label52.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label52.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label52.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label52.Location = new System.Drawing.Point(277, 525);
-            this.label52.Margin = new System.Windows.Forms.Padding(0);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(50, 24);
-            this.label52.TabIndex = 85;
-            this.label52.Text = "%Equ";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label53
-            // 
-            this.label53.AutoEllipsis = true;
-            this.label53.BackColor = System.Drawing.Color.Black;
-            this.label53.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label53.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label53.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label53.Location = new System.Drawing.Point(226, 525);
-            this.label53.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(50, 24);
-            this.label53.TabIndex = 84;
-            this.label53.Text = "Units";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label54
-            // 
-            this.label54.AutoEllipsis = true;
-            this.label54.BackColor = System.Drawing.Color.Black;
-            this.label54.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label54.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label54.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label54.Location = new System.Drawing.Point(175, 525);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(50, 24);
-            this.label54.TabIndex = 83;
-            this.label54.Text = "PnL ($)";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label55
-            // 
-            this.label55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(119)))), ((int)(((byte)(141)))));
-            this.label55.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label55.Location = new System.Drawing.Point(38, 486);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(297, 1);
-            this.label55.TabIndex = 82;
             // 
             // label56
             // 
@@ -1607,438 +1396,15 @@
             this.label58.TabIndex = 79;
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label59
-            // 
-            this.label59.AutoEllipsis = true;
-            this.label59.BackColor = System.Drawing.Color.Transparent;
-            this.label59.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label59.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label59.Location = new System.Drawing.Point(168, 453);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(103, 18);
-            this.label59.TabIndex = 78;
-            this.label59.Text = "STC @ MKT (Bid)";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label60
-            // 
-            this.label60.AutoEllipsis = true;
-            this.label60.BackColor = System.Drawing.Color.Transparent;
-            this.label60.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label60.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label60.Location = new System.Drawing.Point(136, 453);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(35, 18);
-            this.label60.TabIndex = 77;
-            this.label60.Text = "----->";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label61
-            // 
-            this.label61.AutoEllipsis = true;
-            this.label61.BackColor = System.Drawing.Color.Transparent;
-            this.label61.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label61.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label61.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label61.Location = new System.Drawing.Point(41, 453);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(94, 18);
-            this.label61.TabIndex = 76;
-            this.label61.Text = "UnRealized PnL";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label62
-            // 
-            this.label62.AutoEllipsis = true;
-            this.label62.BackColor = System.Drawing.Color.Transparent;
-            this.label62.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label62.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label62.Location = new System.Drawing.Point(168, 436);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(103, 18);
-            this.label62.TabIndex = 75;
-            this.label62.Text = "@ Av. STC Price";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label63
-            // 
-            this.label63.AutoEllipsis = true;
-            this.label63.BackColor = System.Drawing.Color.Transparent;
-            this.label63.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label63.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label63.Location = new System.Drawing.Point(136, 436);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(35, 18);
-            this.label63.TabIndex = 74;
-            this.label63.Text = "----->";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label64
-            // 
-            this.label64.AutoEllipsis = true;
-            this.label64.BackColor = System.Drawing.Color.Transparent;
-            this.label64.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label64.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label64.Location = new System.Drawing.Point(46, 436);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(89, 18);
-            this.label64.TabIndex = 73;
-            this.label64.Text = "Realized PnL";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label65
-            // 
-            this.label65.AutoEllipsis = true;
-            this.label65.BackColor = System.Drawing.Color.Transparent;
-            this.label65.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.label65.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label65.Location = new System.Drawing.Point(177, 418);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(86, 18);
-            this.label65.TabIndex = 72;
-            this.label65.Text = "Av. BTO Price";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label66
-            // 
-            this.label66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(119)))), ((int)(((byte)(141)))));
-            this.label66.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label66.Location = new System.Drawing.Point(41, 374);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(297, 1);
-            this.label66.TabIndex = 71;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(41, 208);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(301, 150);
-            this.dataGridView2.TabIndex = 70;
-            // 
-            // label67
-            // 
-            this.label67.AutoEllipsis = true;
-            this.label67.BackColor = System.Drawing.Color.Black;
-            this.label67.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label67.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label67.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label67.Location = new System.Drawing.Point(194, 181);
-            this.label67.Margin = new System.Windows.Forms.Padding(0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(148, 24);
-            this.label67.TabIndex = 69;
-            this.label67.Text = "Average Price";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label68
-            // 
-            this.label68.AutoEllipsis = true;
-            this.label68.BackColor = System.Drawing.Color.Black;
-            this.label68.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label68.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label68.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label68.Location = new System.Drawing.Point(143, 181);
-            this.label68.Margin = new System.Windows.Forms.Padding(0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(50, 24);
-            this.label68.TabIndex = 68;
-            this.label68.Text = "Qty";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label69
-            // 
-            this.label69.AutoEllipsis = true;
-            this.label69.BackColor = System.Drawing.Color.Black;
-            this.label69.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label69.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label69.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label69.Location = new System.Drawing.Point(92, 181);
-            this.label69.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(50, 24);
-            this.label69.TabIndex = 67;
-            this.label69.Text = "Type";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label70
-            // 
-            this.label70.AutoEllipsis = true;
-            this.label70.BackColor = System.Drawing.Color.Black;
-            this.label70.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label70.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label70.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label70.Location = new System.Drawing.Point(41, 181);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(50, 24);
-            this.label70.TabIndex = 66;
-            this.label70.Text = "Action";
-            this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label71
-            // 
-            this.label71.AutoEllipsis = true;
-            this.label71.BackColor = System.Drawing.Color.White;
-            this.label71.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label71.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label71.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label71.Location = new System.Drawing.Point(194, 142);
-            this.label71.Margin = new System.Windows.Forms.Padding(0);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(148, 24);
-            this.label71.TabIndex = 65;
-            this.label71.Text = "Performance Measure";
-            this.label71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label72
-            // 
-            this.label72.AutoEllipsis = true;
-            this.label72.BackColor = System.Drawing.Color.White;
-            this.label72.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label72.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label72.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label72.Location = new System.Drawing.Point(194, 117);
-            this.label72.Margin = new System.Windows.Forms.Padding(0);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(148, 24);
-            this.label72.TabIndex = 64;
-            this.label72.Text = "Performance Measure";
-            this.label72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label73
-            // 
-            this.label73.AutoEllipsis = true;
-            this.label73.BackColor = System.Drawing.Color.White;
-            this.label73.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label73.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label73.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label73.Location = new System.Drawing.Point(194, 92);
-            this.label73.Margin = new System.Windows.Forms.Padding(0);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(148, 24);
-            this.label73.TabIndex = 63;
-            this.label73.Text = "Performance Measure";
-            this.label73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label74
-            // 
-            this.label74.AutoEllipsis = true;
-            this.label74.BackColor = System.Drawing.Color.White;
-            this.label74.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label74.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label74.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label74.Location = new System.Drawing.Point(143, 142);
-            this.label74.Margin = new System.Windows.Forms.Padding(0);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(50, 24);
-            this.label74.TabIndex = 62;
-            this.label74.Text = "Points";
-            this.label74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label75
-            // 
-            this.label75.AutoEllipsis = true;
-            this.label75.BackColor = System.Drawing.Color.White;
-            this.label75.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label75.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label75.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label75.Location = new System.Drawing.Point(143, 117);
-            this.label75.Margin = new System.Windows.Forms.Padding(0);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(50, 24);
-            this.label75.TabIndex = 61;
-            this.label75.Text = "Points";
-            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label76
-            // 
-            this.label76.AutoEllipsis = true;
-            this.label76.BackColor = System.Drawing.Color.White;
-            this.label76.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label76.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label76.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label76.Location = new System.Drawing.Point(143, 92);
-            this.label76.Margin = new System.Windows.Forms.Padding(0);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(50, 24);
-            this.label76.TabIndex = 60;
-            this.label76.Text = "Points";
-            this.label76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label77
-            // 
-            this.label77.AutoEllipsis = true;
-            this.label77.BackColor = System.Drawing.Color.White;
-            this.label77.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label77.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label77.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label77.Location = new System.Drawing.Point(92, 142);
-            this.label77.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(50, 24);
-            this.label77.TabIndex = 59;
-            this.label77.Text = "Ticks";
-            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label78
-            // 
-            this.label78.AutoEllipsis = true;
-            this.label78.BackColor = System.Drawing.Color.White;
-            this.label78.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label78.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label78.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label78.Location = new System.Drawing.Point(92, 117);
-            this.label78.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(50, 24);
-            this.label78.TabIndex = 58;
-            this.label78.Text = "Ticks";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label79
-            // 
-            this.label79.AutoEllipsis = true;
-            this.label79.BackColor = System.Drawing.Color.White;
-            this.label79.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label79.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label79.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label79.Location = new System.Drawing.Point(92, 92);
-            this.label79.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(50, 24);
-            this.label79.TabIndex = 57;
-            this.label79.Text = "Ticks";
-            this.label79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label80
-            // 
-            this.label80.AutoEllipsis = true;
-            this.label80.BackColor = System.Drawing.Color.White;
-            this.label80.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label80.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label80.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label80.Location = new System.Drawing.Point(41, 142);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(50, 24);
-            this.label80.TabIndex = 56;
-            this.label80.Text = "R-Mult";
-            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label81
-            // 
-            this.label81.AutoEllipsis = true;
-            this.label81.BackColor = System.Drawing.Color.White;
-            this.label81.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label81.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label81.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label81.Location = new System.Drawing.Point(41, 117);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(50, 24);
-            this.label81.TabIndex = 55;
-            this.label81.Text = "R-Mult";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label82
-            // 
-            this.label82.AutoEllipsis = true;
-            this.label82.BackColor = System.Drawing.Color.White;
-            this.label82.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label82.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label82.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label82.Location = new System.Drawing.Point(41, 92);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(50, 24);
-            this.label82.TabIndex = 54;
-            this.label82.Text = "R-Mult";
-            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label83
-            // 
-            this.label83.AutoEllipsis = true;
-            this.label83.BackColor = System.Drawing.Color.Black;
-            this.label83.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label83.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label83.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label83.Location = new System.Drawing.Point(194, 68);
-            this.label83.Margin = new System.Windows.Forms.Padding(0);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(133, 24);
-            this.label83.TabIndex = 53;
-            this.label83.Text = "Performance Measure";
-            this.label83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label84
-            // 
-            this.label84.AutoEllipsis = true;
-            this.label84.BackColor = System.Drawing.Color.Black;
-            this.label84.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label84.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label84.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label84.Location = new System.Drawing.Point(146, 68);
-            this.label84.Margin = new System.Windows.Forms.Padding(0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(47, 24);
-            this.label84.TabIndex = 52;
-            this.label84.Text = "Points";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label85
-            // 
-            this.label85.AutoEllipsis = true;
-            this.label85.BackColor = System.Drawing.Color.Black;
-            this.label85.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label85.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label85.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label85.Location = new System.Drawing.Point(92, 68);
-            this.label85.Margin = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(43, 24);
-            this.label85.TabIndex = 51;
-            this.label85.Text = "Ticks";
-            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label86
-            // 
-            this.label86.AutoEllipsis = true;
-            this.label86.BackColor = System.Drawing.Color.Black;
-            this.label86.Font = new System.Drawing.Font("Calibri", 9.75F);
-            this.label86.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label86.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label86.Location = new System.Drawing.Point(41, 68);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(48, 24);
-            this.label86.TabIndex = 50;
-            this.label86.Text = "R-Mult";
-            this.label86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // ofdImage
             // 
             this.ofdImage.FileName = "openFileDialog1";
-            // 
-            // imagePanel1
-            // 
-            this.imagePanel1.Comments = null;
-            this.imagePanel1.CommentsForeground = System.Drawing.SystemColors.MenuHighlight;
-            this.imagePanel1.Image = null;
-            this.imagePanel1.LabelBackColor = System.Drawing.Color.Black;
-            this.imagePanel1.LabelVisibility = true;
-            this.imagePanel1.Location = new System.Drawing.Point(539, 252);
-            this.imagePanel1.Name = "imagePanel1";
-            this.imagePanel1.Size = new System.Drawing.Size(151, 186);
-            this.imagePanel1.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 867);
-            this.Controls.Add(this.imagePanel1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -2060,9 +1426,10 @@
             this.flowLayoutPanel14.ResumeLayout(false);
             this.MessagePage.ResumeLayout(false);
             this.flowLayoutPanel13.ResumeLayout(false);
+            this.pnlCamera.ResumeLayout(false);
+            this.flowLayoutPanel7.ResumeLayout(false);
             this.flowLayoutPanel12.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2085,57 +1452,11 @@
         private System.Windows.Forms.Label LblTicks;
         private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.Label lblPerformanceMeasure;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label lblShare;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Label label95;
@@ -2151,10 +1472,9 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.RichTextBox rTxtboxMsg;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel13;
-        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label lblCommentsHeader;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
         private System.Windows.Forms.OpenFileDialog ofdImage;
-        private System.Windows.Forms.Label lblInsertImage;
         private System.Windows.Forms.Label lblCameraIcon;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
@@ -2171,7 +1491,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label lblFaceBook;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel15;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel16;
@@ -2197,7 +1517,15 @@
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.FlowLayoutPanel ControlPanel;
         private System.Windows.Forms.Button button2;
-        private ImagePanel imagePanel1;
+        private System.Windows.Forms.Label lblTwitter;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.FlowLayoutPanel pnlCamera;
+        private System.Windows.Forms.Label lblScreenShot;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label lblSeparater;
     }
 }
 
